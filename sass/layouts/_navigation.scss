@@ -1,0 +1,51 @@
+.navigation {
+    background-color: #E6C36E;
+    height: 2rem;
+    transition: all 0.5s ease;
+    
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    &_items {
+        
+
+        li {
+            float: left;
+            padding: 6px 15px;
+            animation: pop-up 1s ease;
+
+
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                color: black;
+                font-size: 0.9rem;
+                font-color: black;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: 'Handlee';
+                transition: all 0.3s ease;
+            }
+
+
+        }
+        & li:hover a{
+            transform: scale(1.2);
+            font-weight: bolder;
+            color: rosybrown;
+            text-shadow: 3px 3px 5px white;
+        }
+    }
+
+}
+    @media only screen and (max-width : 800px) {
+        .navigation {
+            height: 100px;
+            margin: auto;
+
+        }
+    }

@@ -1,0 +1,171 @@
+.header {
+    background-color: $color_grey;
+    position: relative;
+
+    &::after {
+        @include clearfix;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    &_logo {
+        padding: 2rem;
+        position: relative;
+        animation: moveInLeft 0.8s ease;
+
+        .rt_camp_logo {
+            object-fit: cover;
+        }
+
+        &_part {
+            position: absolute;
+            top: 70%;
+            left: 22%;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            color: gray;
+            font-weight: bold;
+        }
+    }
+
+    &_navigation {
+        animation: moveInRight 1s ease;
+        &--items {
+            float: right;
+            @include small-nav;
+            padding: 10px;
+            
+            
+            li{
+                
+            }
+            
+            & li:hover a{
+                    color: white;
+                    text-shadow: 1px 1px 5px black;
+                    transform: scale(1.1);
+                }
+            
+            
+
+            a {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: 'overlock';
+                transition: all 0.3s ease;
+                backface-visibility: hidden;
+                
+
+                
+            }
+
+        }
+    }
+
+
+    &_searchbox {
+        position: absolute;
+        top: 60px;
+        left: 70%;
+        animation: moveInRight 1s ease;
+
+        &-input {
+            width: 15rem;
+            height: 1.2rem;
+            background-image: url("/img/google.png");
+            background-repeat: no-repeat;
+            border: 2px solid gray;
+            border-radius: 5px;
+
+            &:focus {
+                background-image: none;
+                outline: none;
+                box-shadow: 3px 3px 10px white, -2px -2px 10px white;
+                background-color: whitesmoke;
+            }
+
+        }
+
+        .search_btn {
+            background-image: url(/img/search.png);
+            background-repeat: no-repeat;
+            width: 2rem;
+            height: 2rem;
+            background-size: 2rem 2rem;
+            border: none;
+            display: none;
+            margin-left: 10px;
+        }
+
+    }
+
+}
+
+
+@media only screen and (max-width : 900px) {
+    .header {
+
+        &_logo {
+            padding: 1.5rem;
+            margin-top: 15px;
+            text-align: center;
+            position: relative;
+
+            .rt_camp_logo {
+                width: 60%;
+                height: 60%;
+            }
+
+            &_part {
+                top: 72%;
+                left: 70%;
+            }
+        }
+
+        &_navigation {
+            width: 80%;
+            text-align: right;
+            padding: 2px;
+
+            &--items {
+                @include small-nav;
+                position: absolute;
+                left: 55%;
+
+                &::after {
+                    @include clearfix;
+                }
+            }
+
+        }
+
+
+
+        &_searchbox {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            margin-top: 0px;
+            
+
+            &-input {
+                width: 10rem;
+                display: none;
+            }
+
+            .search_btn {
+                display: block;
+            }
+
+        }
+
+
+    }
+
+
+
+}

@@ -1,0 +1,163 @@
+.footer {
+    background-color: $color_yellow;
+
+    &_main {
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+    &_heading {
+        border-bottom: 1px solid black;
+        font-family: 'overlock';
+        font-size: 1.5rem;
+    }
+
+    &_navigation {
+        line-height: 20pt;
+        
+        li:hover a{
+            color: white;
+            text-shadow: 0px 2px 5px black;
+        }
+
+        a {
+            color: black;
+            font-family: 'Patrick hand';
+            font-size: 1.3rem;
+        }
+    }
+
+    &_navigation--2 {
+        text-align: center;
+
+        &--items {
+            display: inline-block;
+            @include small-nav;
+
+            li {
+                text-align: center;
+                
+                &:hover a{
+                    font-weight: bold;
+                }
+                a{
+                    font-family: 'Patrick hand';
+                    font-size: 0.8rem;
+                }
+            }
+
+            &::after {
+                @include clearfix;
+            }
+        }
+    }
+
+    &_image {
+        padding: 10px;
+        position: relative;
+
+        img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 10px;
+
+        }
+    }
+
+    &_copyright {
+        text-align: center;
+        font-size: 0.9rem;
+
+    }
+
+    &_disclaimer {
+        background-color: black;
+        opacity: 0.5;
+        font-family: 'Josefin slab';
+
+        p {
+            color: white;
+            width: 80%;
+            margin: auto;
+            font-size: 1rem;
+        }
+    }
+
+    &_part--1 {
+        flex-grow: 1;
+        padding: 5px;
+    }
+
+    &_part--2 {
+        flex-grow: 1;
+        padding: 5px;
+    }
+
+    &_part--3 {
+        flex-grow: 1;
+        padding: 5px;
+    }
+
+
+
+}
+
+@media only screen and (max-width : 900px) {
+    .footer {
+        &_main {
+            display: block;
+            width: 100%;
+        }
+        
+        &_image {
+        padding: 0px;
+        position: relative;
+
+        img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 10px;
+            width: 40%;
+            height: 40%;
+
+        }
+    }
+
+        &_navigation {
+            line-height: 17pt;
+            
+            a{
+                font-size: 1rem;
+            }
+        
+        }
+
+        &_disclaimer {
+
+            p {
+                width: 90%;
+            }
+        }
+
+        &_part--1 {
+            float: left;
+            width: 38%;
+            margin: 5px;
+        }
+
+        &_part--2 {
+            float: right;
+            width: 48%;
+            margin: 5px;
+        }
+.fas {
+    margin: 0px 2px 0px 0px;
+    font-size: 0.8rem;
+}
+
+    }
+
+}

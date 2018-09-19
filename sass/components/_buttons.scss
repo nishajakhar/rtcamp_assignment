@@ -1,0 +1,17 @@
+.about {
+    &_welcome {
+
+        &--btn {
+            margin-top: 10px;
+            border: none;
+            font-weight: bold;
+            color: $color_yellow;
+            font-family: 'Courgette';
+            
+            &:hover{
+                color: aliceblue;
+                transform: skewX(25deg);
+            }
+        }
+    }
+}

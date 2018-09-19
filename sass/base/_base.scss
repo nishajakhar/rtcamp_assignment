@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+hr.big {
+    width: 80%;
+    margin: 15px auto;
+}
+
+hr {
+    margin: 10px auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.fas {
+    margin: 0px 8px 0px 0px;
+    font-size: 0.8rem;
+}
+@media only screen and (max-width : 900px){
+    hr.big{
+        width: 95%;
+    }
+}

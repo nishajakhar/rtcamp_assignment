@@ -1,0 +1,14 @@
+.main {
+
+    width: 80%;
+    margin: auto;
+
+    &_heading {
+        background-image: linear-gradient(to right, $color_heading_2 0%, $color_heading_2 10px, $color_heading_1 10px);
+        padding: 5px 15px;
+        font-family: 'Cabin sketch';
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+
+    }
+}

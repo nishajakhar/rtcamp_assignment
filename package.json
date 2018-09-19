@@ -1,0 +1,25 @@
+{
+  "name": "rt_camp_assignment",
+  "version": "1.0.0",
+  "description": "Front-End Engineer Task",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishajakhar/rtcamp_assignment.git"
+  },
+  "author": "Nisha Jakhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nishajakhar/rtcamp_assignment/issues"
+  },
+  "homepage": "https://github.com/nishajakhar/rtcamp_assignment#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
