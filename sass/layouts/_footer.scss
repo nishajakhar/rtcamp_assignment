@@ -1,19 +1,19 @@
 .footer {
     background-color: $color_yellow;
 
-    &_main {
+    &__main {
         display: flex;
         width: 80%;
         margin: auto;
     }
 
-    &_heading {
+    &__heading {
         border-bottom: 1px solid black;
         font-family: 'overlock';
         font-size: 1.5rem;
     }
 
-    &_navigation {
+    &__navigation {
         line-height: 20pt;
         
         li:hover a{
@@ -28,7 +28,7 @@
         }
     }
 
-    &_navigation--2 {
+    &__navigation-2 {
         text-align: center;
 
         &--items {
@@ -53,7 +53,7 @@
         }
     }
 
-    &_image {
+    &__image {
         padding: 10px;
         position: relative;
 
@@ -62,17 +62,15 @@
             margin-right: auto;
             margin-left: auto;
             padding: 10px;
-
         }
     }
 
-    &_copyright {
+    &__copyright {
         text-align: center;
         font-size: 0.9rem;
-
     }
 
-    &_disclaimer {
+    &__disclaimer {
         background-color: black;
         opacity: 0.5;
         font-family: 'Josefin slab';
@@ -85,79 +83,73 @@
         }
     }
 
-    &_part--1 {
+    &__part--1 {
         flex-grow: 1;
         padding: 5px;
     }
 
-    &_part--2 {
+    &__part--2 {
         flex-grow: 1;
         padding: 5px;
     }
 
-    &_part--3 {
+    &__part--3 {
         flex-grow: 1;
         padding: 5px;
     }
-
-
-
 }
 
-@media only screen and (max-width : 900px) {
-    .footer {
-        &_main {
-            display: block;
-            width: 100%;
-        }
-        
-        &_image {
-        padding: 0px;
-        position: relative;
-
-        img {
-            display: block;
-            margin-right: auto;
-            margin-left: auto;
-            padding: 10px;
-            width: 40%;
-            height: 40%;
-
-        }
-    }
-
-        &_navigation {
-            line-height: 17pt;
-            
-            a{
-                font-size: 1rem;
+    @media only screen and (max-width : 900px) {
+        .footer {
+            &__main {
+                display: block;
+                width: 100%;
             }
-        
-        }
 
-        &_disclaimer {
+            &__image {
+            padding: 0px;
+            position: relative;
 
-            p {
-                width: 90%;
+            img {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                padding: 10px;
+                width: 40%;
+                height: 40%;
+
             }
         }
 
-        &_part--1 {
-            float: left;
-            width: 38%;
-            margin: 5px;
-        }
+            &__navigation {
+                line-height: 17pt;
 
-        &_part--2 {
-            float: right;
-            width: 48%;
-            margin: 5px;
-        }
-.fas {
-    margin: 0px 2px 0px 0px;
-    font-size: 0.8rem;
-}
+                a{
+                    font-size: 1rem;
+                }
+            }
 
+            &__disclaimer {
+
+                p {
+                    width: 90%;
+                }
+            }
+
+            &__part--1 {
+                float: left;
+                width: 38%;
+                margin: 5px;
+            }
+
+            &__part--2 {
+                float: right;
+                width: 48%;
+                margin: 5px;
+            }
+        .fas {
+            margin: 0px 2px 0px 0px;
+            font-size: 0.8rem;
+            }
+        }
     }
-
-}

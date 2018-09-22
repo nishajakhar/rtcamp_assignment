@@ -1,0 +1,149 @@
+.user-stories {
+    max-height: 200px;
+    margin-top: 0px;
+    width: 80%;
+    margin: auto;
+    .rotator-3D {
+        height: 200px;
+        background-color: lightgray;
+
+        &__content {
+            position: relative;
+            width: 150px;
+            margin: auto;
+            padding-top: 50px;
+            perspective: 1200px;
+
+            &--items {
+                width: 100%;
+                position: absolute;
+                float: right;
+                transform-style: preserve-3d;
+                animation: rotar 20s infinite linear;
+
+                &:hover {
+                    animation-play-state: paused;
+                    cursor: pointer;
+                }
+
+                figure {
+                    width: 100%;
+                    height: 80px;
+                    overflow: hidden;
+                    position: absolute;
+                    box-shadow: 3px 3px 10px gray, -3px -3px 20px 3px gray;
+                    border-radius: 3px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transform: scale(1.2);
+                        image-rendering: auto;
+                        transition: all 300ms;
+
+                        &:hover {
+                            transform: scale(1);
+                            filter: brightness(80%);
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        transform: rotateY(40deg) translateZ(410px);
+                    }
+
+                    &:nth-child(2) {
+                        transform: rotateY(80deg) translateZ(410px);
+                    }
+
+                    &:nth-child(3) {
+                        transform: rotateY(120deg) translateZ(410px);
+                    }
+
+                    &:nth-child(4) {
+                        transform: rotateY(160deg) translateZ(410px);
+                    }
+
+                    &:nth-child(5) {
+                        transform: rotateY(200deg) translateZ(410px);
+                    }
+
+                    &:nth-child(6) {
+                        transform: rotateY(240deg) translateZ(410px);
+                    }
+
+                    &:nth-child(7) {
+                        transform: rotateY(280deg) translateZ(410px);
+                    }
+
+                    &:nth-child(8) {
+                        transform: rotateY(320deg) translateZ(410px);
+                    }
+
+                    &:nth-child(9) {
+                        transform: rotateY(360deg) translateZ(410px);
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 900px){
+    .user-stories {
+    width: 95%;
+    margin: auto;
+        max-height: 150px;
+    .rotator-3D {
+
+        &__content {
+            width: 100px;
+            perspective: 1200px;
+
+            &--items{
+
+                figure {
+                    height: 70px;
+
+                    &:nth-child(1) {
+                        transform: rotateY(40deg) translateZ(180px);
+                    }
+
+                    &:nth-child(2) {
+                        transform: rotateY(80deg) translateZ(180px);
+                    }
+
+                    &:nth-child(3) {
+                        transform: rotateY(120deg) translateZ(180px);
+                    }
+
+                    &:nth-child(4) {
+                        transform: rotateY(160deg) translateZ(180px);
+                    }
+
+                    &:nth-child(5) {
+                        transform: rotateY(200deg) translateZ(180px);
+                    }
+
+                    &:nth-child(6) {
+                        transform: rotateY(240deg) translateZ(180px);
+                    }
+
+                    &:nth-child(7) {
+                        transform: rotateY(280deg) translateZ(180px);
+                    }
+
+                    &:nth-child(8) {
+                        transform: rotateY(320deg) translateZ(180px);
+                    }
+
+                    &:nth-child(9) {
+                        transform: rotateY(360deg) translateZ(180px);
+                    }
+
+                }
+            }
+        }
+    }
+}
+}

@@ -9,19 +9,17 @@
         margin-top: 20px;
     }
 
-    &_arrow--left {
+    &__arrow--left {
         flex-grow: 1;
         margin: 10px;
         display: inline-block;
         width: 15px;
         height: 7rem;
         
-        
         &:hover .fas{
             color: darken(gainsboro, 15%);
             text-shadow: 2px 2px 5px black;
-        }
-        
+        }   
     }
 
     div {
@@ -31,7 +29,7 @@
         display: inline-block;
     }
 
-    &_arrow--right {
+    &__arrow--right {
         flex-grow: 1;
         margin: 5px;
         display: inline-block;
@@ -45,8 +43,8 @@
     }
 }
 
-@media only screen and (max-width : 900px){
-    .imgslider{
-        flex-wrap: wrap;
+    @media only screen and (max-width : 900px){
+        .imgslider{
+            flex-wrap: wrap;
+        }
     }
-}

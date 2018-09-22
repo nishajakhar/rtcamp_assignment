@@ -9,7 +9,7 @@
     z-index: 10;
     display: none;
     
-    &_content {
+    &__content {
         @include abscenter;
         width: 80%;
         height: 30rem;
@@ -18,17 +18,6 @@
         position: relative;
         z-index: 12;
         display: table;
-
-        .close_btn {
-            position: absolute;
-            top: 15px;
-            left: 95%;
-            border: none;
-            font-weight: bold;
-            font-size: 1.5rem;
-            border-radius: 50%;
-            padding: 8px;
-        }
 
         &--des {
             display: table-cell;
@@ -49,7 +38,6 @@
             font-family: 'handlee';
             -webkit-background-clip: text;
         }
-
 
         &--story {
             font-family: cursive;
@@ -75,61 +63,54 @@
 }
 
 
-@media only screen and (max-width : 900px) {
-    .popup {
-        width: 100%;
-        height: 800px;
+    @media only screen and (max-width : 900px) {
+        .popup {
+            width: 100%;
+            height: 800px;
 
-        &_content {
-            margin-top: -100px;
-            width: 85%;
-            height: 65%;
-            display: block;
-
-            .close_btn {
-                left: 90%;
-                font-size: 0.7rem;
-            }
-
-            &--des {
+            &__content {
+                margin-top: -100px;
+                width: 85%;
+                height: 65%;
                 display: block;
-                width: 100%;
-                margin: 10px;
 
-            }
+                .close_btn {
+                    left: 90%;
+                    font-size: 0.7rem;
+                }
 
-            &--heading {
-                font-size: 1.5rem;
-                padding: 15px;
-            }
+                &--des {
+                    display: block;
+                    width: 100%;
+                    margin: 10px;
+                }
 
+                &--heading {
+                    font-size: 1.5rem;
+                    padding: 15px;
+                }
 
-            &--story {
-                font-size: 0.9rem;
-                padding: 5px;
-                line-height: 15pt;
+                &--story {
+                    font-size: 0.9rem;
+                    padding: 5px;
+                    line-height: 15pt;
 
-                &::before {
-                    content: '';
-                    background-image: url(/img/person.png);
-                    background-size: contain;
-                    float: left;
-                    height: 3rem;
-                    width: 3rem;
-                    border-radius: 10px;
-                    border: 5px solid gray;
-                    margin-right: 10px;
+                    &::before {
+                        content: '';
+                        background-image: url(/img/person.png);
+                        background-size: contain;
+                        float: left;
+                        height: 3rem;
+                        width: 3rem;
+                        border-radius: 10px;
+                        border: 5px solid gray;
+                        margin-right: 10px;
+                    }
+                }
+
+                &--images {
+                    display: none;
                 }
             }
-
-            &--images {
-                display: none;
-            }
-
-
-
         }
-
-
     }
-}
