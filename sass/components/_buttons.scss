@@ -2,7 +2,7 @@
     &__welcome {
 
         &--btn {
-            margin-top: 10px;
+            margin-top: 3px;
             border: none;
             font-weight: bold;
             color: $color_yellow;
@@ -22,7 +22,7 @@
     left: 95%;
     border: none;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 25px;
     border-radius: 50%;
     padding: 8px;
 }
@@ -30,9 +30,9 @@
 .search-btn {
     background-image: url(/img/search-btn.png);
     background-repeat: no-repeat;
-    width: 2rem;
-    height: 2rem;
-    background-size: 2rem 2rem;
+    width: 36px;
+    height: 36px;
+    background-size: 36px 36px;
     border: none;
     display: none;
     margin-left: 10px;
@@ -42,8 +42,9 @@
     color: blue;
     border: 1px solid blue;
     background-color: lightblue;
-    padding: 4px 6px;
+    padding: 2px 6px;
     border-radius: 3px;
+    font-size: 14px;
 
     &:hover i {
         animation: bouncy 0.5s ease;

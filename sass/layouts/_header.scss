@@ -6,13 +6,13 @@
         @include clearfix;
     }
 
-    .container {
+    &__container {
         width: 80%;
         margin: auto;
     }
 
     &__logo {
-        padding: 2rem;
+        padding: 30px;
         position: relative;
         animation: moveInLeft 0.8s ease;
 
@@ -64,8 +64,8 @@
         animation: moveInRight 1s ease;
 
         &--input {
-            width: 15rem;
-            height: 1.2rem;
+            width: 250px;
+            height: 25px;
             background-image: url("/img/placeholder-pic.png");
             background-repeat: no-repeat;
             border: 2px solid gray;

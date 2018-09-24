@@ -4,7 +4,7 @@
         margin-bottom: 2rem;
     }
 
-    padding: 0 1rem;
+    padding: 0 16px;
 
     &::after {
         @include clearfix;
@@ -15,7 +15,7 @@
         width: calc((100% - 3 * 1rem) / 4);
 
         a {
-            font-size: 0.8rem;
+            font-size: 14px;
             font-family: 'Courgette';
 
             &:hover {

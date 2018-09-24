@@ -3,6 +3,9 @@
     padding: 0px;
 }
 
+body{
+    font-size: 16px;
+}
 hr.big {
     width: 80%;
     margin: 15px auto;
@@ -22,8 +25,22 @@ a {
 }
 
 .fas {
-    margin: 0px 8px 0px 0px;
-    font-size: 0.8rem;
+    margin-right: 10px;
+    font-size: 14px;
+    
+}
+h1{
+    font-size: 18px;
+}
+
+h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+a:hover{
+    text-decoration: none;
 }
     @media only screen and (max-width : 900px){
         hr.big{

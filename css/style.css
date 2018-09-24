@@ -49,6 +49,9 @@
   margin: 0px;
   padding: 0px; }
 
+body {
+  font-size: 16px; }
+
 hr.big {
   width: 80%;
   margin: 15px auto; }
@@ -64,8 +67,19 @@ a {
   color: blue; }
 
 .fas {
-  margin: 0px 8px 0px 0px;
-  font-size: 0.8rem; }
+  margin-right: 10px;
+  font-size: 14px; }
+
+h1 {
+  font-size: 18px; }
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700; }
+
+a:hover {
+  text-decoration: none; }
 
 @media only screen and (max-width: 900px) {
   hr.big {
@@ -78,11 +92,13 @@ a {
     background-image: linear-gradient(to right, #E6C26C 0%, #E6C26C 10px, #F4EEDE 10px);
     padding: 5px 15px;
     font-family: 'Cabin sketch';
-    font-size: 1.2rem;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 19px; }
 
 .about__welcome--btn {
-  margin-top: 10px;
+  margin-top: 3px;
   border: none;
   font-weight: bold;
   color: #E6C36E;
@@ -97,16 +113,16 @@ a {
   left: 95%;
   border: none;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 25px;
   border-radius: 50%;
   padding: 8px; }
 
 .search-btn {
   background-image: url(/img/search-btn.png);
   background-repeat: no-repeat;
-  width: 2rem;
-  height: 2rem;
-  background-size: 2rem 2rem;
+  width: 36px;
+  height: 36px;
+  background-size: 36px 36px;
   border: none;
   display: none;
   margin-left: 10px; }
@@ -115,8 +131,9 @@ a {
   color: blue;
   border: 1px solid blue;
   background-color: lightblue;
-  padding: 4px 6px;
-  border-radius: 3px; }
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 14px; }
   .like-btn:hover i {
     animation: bouncy 0.5s ease; }
   .like-btn i {
@@ -127,9 +144,8 @@ a {
   width: 80%;
   margin: auto; }
   .imgslider .fas {
-    font-size: 5rem;
-    color: #EDE9EA;
-    margin-top: 20px; }
+    font-size: 50px;
+    color: #EDE9EA; }
   .imgslider__arrow--left {
     flex-grow: 1;
     margin: 10px;
@@ -139,7 +155,7 @@ a {
     .imgslider__arrow--left:hover .fas {
       color: #b6b6b6;
       text-shadow: 2px 2px 5px black; }
-  .imgslider div {
+  .imgslider .container {
     flex-grow: 1;
     margin-top: auto;
     margin-bottom: auto;
@@ -252,8 +268,7 @@ a {
   width: 80%;
   margin: auto; }
   .user-stories .rotator-3D {
-    height: 200px;
-    background-color: lightgray; }
+    height: 200px; }
     .user-stories .rotator-3D__content {
       position: relative;
       width: 150px;
@@ -340,11 +355,11 @@ a {
     content: '';
     clear: both;
     display: table; }
-  .header .container {
+  .header__container {
     width: 80%;
     margin: auto; }
   .header__logo {
-    padding: 2rem;
+    padding: 30px;
     position: relative;
     animation: moveInLeft 0.8s ease; }
     .header__logo .rt-camp_logo {
@@ -370,11 +385,10 @@ a {
         .header__navigation--items li:not(:last-child) {
           border-right: 1px solid black; }
         .header__navigation--items li a {
-          font-size: 0.75rem;
-          padding: 0px 5px;
+          font-size: 12px;
+          padding: 0 5px;
           color: black;
-          margin-bottom: auto;
-          margin-top: auto;
+          margin-top: -3px;
           display: block; }
       .header__navigation--items a {
         text-transform: uppercase;
@@ -392,8 +406,8 @@ a {
     left: 70%;
     animation: moveInRight 1s ease; }
     .header__searchbox--input {
-      width: 15rem;
-      height: 1.2rem;
+      width: 250px;
+      height: 25px;
       background-image: url("/img/placeholder-pic.png");
       background-repeat: no-repeat;
       border: 2px solid gray;
@@ -430,11 +444,10 @@ a {
         .header__navigation--items li:not(:last-child) {
           border-right: 1px solid black; }
         .header__navigation--items li a {
-          font-size: 0.75rem;
-          padding: 0px 5px;
+          font-size: 12px;
+          padding: 0 5px;
           color: black;
-          margin-bottom: auto;
-          margin-top: auto;
+          margin-top: -3px;
           display: block; }
       .header__navigation--items::after {
         content: '';
@@ -455,16 +468,17 @@ a {
   .footer__heading {
     border-bottom: 1px solid black;
     font-family: 'overlock';
-    font-size: 1.5rem; }
+    font-size: 23px; }
   .footer__navigation {
     line-height: 20pt; }
     .footer__navigation li:hover a {
       color: white;
-      text-shadow: 0px 2px 5px black; }
+      text-shadow: 0px 2px 5px black;
+      text-decoration: none; }
     .footer__navigation a {
       color: black;
       font-family: 'Patrick hand';
-      font-size: 1.3rem; }
+      font-size: 20px; }
   .footer__navigation-2 {
     text-align: center; }
     .footer__navigation-2--items {
@@ -476,19 +490,18 @@ a {
         .footer__navigation-2--items li:not(:last-child) {
           border-right: 1px solid black; }
         .footer__navigation-2--items li a {
-          font-size: 0.75rem;
-          padding: 0px 5px;
+          font-size: 12px;
+          padding: 0 5px;
           color: black;
-          margin-bottom: auto;
-          margin-top: auto;
+          margin-top: -3px;
           display: block; }
       .footer__navigation-2--items li {
         text-align: center; }
         .footer__navigation-2--items li:hover a {
-          font-weight: bold; }
+          font-weight: 700; }
         .footer__navigation-2--items li a {
           font-family: 'Patrick hand';
-          font-size: 0.8rem; }
+          font-size: 14px; }
       .footer__navigation-2--items::after {
         content: '';
         clear: both;
@@ -503,7 +516,7 @@ a {
       padding: 10px; }
   .footer__copyright {
     text-align: center;
-    font-size: 0.9rem; }
+    font-size: 12px; }
   .footer__disclaimer {
     background-color: black;
     opacity: 0.5;
@@ -512,7 +525,7 @@ a {
       color: white;
       width: 80%;
       margin: auto;
-      font-size: 1rem; }
+      line-height: 12pt; }
   .footer__part--1 {
     flex-grow: 1;
     padding: 5px; }
@@ -540,7 +553,7 @@ a {
   .footer__navigation {
     line-height: 17pt; }
     .footer__navigation a {
-      font-size: 1rem; }
+      font-size: 15px; }
   .footer__disclaimer p {
     width: 90%; }
   .footer__part--1 {
@@ -553,10 +566,10 @@ a {
     margin: 5px; }
   .footer .fas {
     margin: 0px 2px 0px 0px;
-    font-size: 0.8rem; } }
+    font-size: 14px; } }
 
 .row {
-  padding: 0 1rem; }
+  padding: 0 16px; }
   .row:not(:last-child) {
     margin-bottom: 2rem; }
   .row::after {
@@ -566,7 +579,7 @@ a {
   .row .col-1-of-4 {
     width: calc((100% - 3 * 1rem) / 4); }
     .row .col-1-of-4 a {
-      font-size: 0.8rem;
+      font-size: 14px;
       font-family: 'Courgette'; }
       .row .col-1-of-4 a:hover {
         text-decoration: underline; }
@@ -606,7 +619,6 @@ a {
 
 .navigation {
   background-color: #E6C36E;
-  height: 2rem;
   transition: all 0.5s ease; }
   .navigation .container {
     width: 80%;
@@ -619,8 +631,8 @@ a {
       text-decoration: none;
       display: inline-block;
       color: black;
-      font-size: 0.9rem;
       font-color: black;
+      font-size: 14px;
       text-transform: uppercase;
       font-weight: 700;
       font-family: 'handlee';
@@ -652,7 +664,6 @@ a {
       color: burlywood;
       padding: 10px;
       font-family: 'overlock';
-      font-size: 1.7rem;
       transition: all 0.5s ease; }
       .about__welcome--heading:hover {
         background-image: linear-gradient(to right, burlywood, brown);
@@ -711,7 +722,7 @@ a {
     padding-right: 10px; }
     .main__section-2--tweets p {
       font-family: 'Overlock';
-      font-size: 1.1rem;
+      font-size: 17px;
       margin: 15px 5px;
       line-height: 15pt; }
       .main__section-2--tweets p a {
@@ -725,10 +736,10 @@ a {
       margin-right: 5px; }
     .main__section-2--facebook--header h2 {
       color: blue;
-      font-size: 1.5rem;
+      font-size: 25px;
       font-family: 'overlock'; }
     .main__section-2--facebook--header p {
-      font-size: 0.9rem;
+      font-size: 12px;
       font-family: 'Courgette'; }
       .main__section-2--facebook--header p span {
         font-weight: 700; }
@@ -739,19 +750,20 @@ a {
       width: 70px;
       height: 70px; }
     .main__section-2--facebook .row--short .col-1-of-6 a {
-      font-size: 0.8rem;
+      font-size: 12px;
       display: block;
       text-align: center;
       color: gray;
       font-family: cursive; }
       .main__section-2--facebook .row--short .col-1-of-6 a:hover {
         color: royalblue;
-        text-shadow: 2px 0 5px gray; }
+        text-shadow: 2px 0 5px gray;
+        text-decoration: none; }
     .main__section-2--facebook--footer img {
       float: left;
       margin-right: 5px; }
     .main__section-2--facebook--footer p {
-      font-size: 0.8rem;
+      font-size: 12px;
       color: gray;
       font-family: 'Patrick hand';
       padding-top: 5px; }
@@ -762,21 +774,21 @@ a {
     .main__sidebar--news .picture img {
       float: left;
       width: 95px;
-      height: 45px;
-      padding: 10px 0;
+      height: 70px;
+      padding: 15px 0;
       border: 5px solid gray;
       margin-right: 5px; }
     .main__sidebar--news .picture__des {
       font-weight: 700;
       font-family: 'overlock';
-      font-size: 0.8rem;
-      line-height: 18pt; }
+      font-size: 14px;
+      line-height: 16pt; }
     .main__sidebar--news .picture__date {
-      font-size: 0.8rem;
+      font-size: 14px;
       margin-top: 10px;
       font-family: 'overlock'; }
     .main__sidebar--news .nav {
-      margin: 30px 0; }
+      margin: 10px 0; }
       .main__sidebar--news .nav ul {
         margin: 25px 0; }
         .main__sidebar--news .nav ul li {
@@ -784,7 +796,7 @@ a {
           .main__sidebar--news .nav ul li:hover a {
             color: aquamarine; }
           .main__sidebar--news .nav ul li a {
-            font-size: 1rem;
+            font-size: 16px;
             font-family: 'Patrick hand';
             transition: 0.3s ease; }
       .main__sidebar--news .nav button {
@@ -810,12 +822,12 @@ a {
         padding: 5px 5px; }
     .main__sidebar--weather-details .day {
       text-transform: uppercase;
-      font-size: 1rem;
       font-family: 'Fredericka the great'; }
     .main__sidebar--weather-details p {
-      font-size: 0.8rem;
+      font-size: 14px;
       text-align: center;
-      font-family: 'overlock'; }
+      font-family: 'overlock';
+      margin: 0; }
     .main__sidebar--weather .cloudy {
       width: 70px;
       height: 50px;
@@ -842,7 +854,18 @@ a {
 
 .partners {
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  position: relative; }
+  .partners a {
+    top: 35px; }
+  .partners .fas {
+    margin-top: 7px; }
+  .partners .container {
+    height: 80px; }
+  .partners .row {
+    width: 95%;
+    height: 100%;
+    margin: auto !important; }
   .partners .imgslider {
     width: 100%; }
 

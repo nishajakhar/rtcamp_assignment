@@ -8,7 +8,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/style.css" />
+   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet" />
@@ -21,11 +21,14 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+         <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="header__container">
             <nav class="header__navigation">
                 <ul class="header__navigation--items">
                     <li><a href="#">Home</a></li>
@@ -318,13 +321,94 @@
         <h2 class="main__heading">Our Partners</h2>
 
         <div class="imgslider">
-            <div class="imgslider__arrow--left"><i class="fas fa-angle-left"></i></div>
-            <div><img src="img/adidas.png" alt="adidas" /></div>
-            <div><img src="img/coca-cola.png" alt="coca-cola" /></div>
-            <div><img src="img/sony.png" alt="sony" /></div>
-            <div><img src="img/emirates.png" alt="emirates" /></div>
-            <div><img src="img/visa.png" alt="visa" /></div>
-            <div class="imgslider__arrow--right"><i class="fas fa-angle-right"></i></div>
+            <a class="imgslider__arrow--left left carousel-control" data-slide="prev" href="#image_carousel"><i class="fas fa-angle-left"></i></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="image_carousel" class="carousel slide" data-interval="2000" data-ride="carousel" data-pause="hover" data-wrap="true">
+                            <ol class="carousel-indicators">
+                                <li data-target="#image_carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#image_carousel" data-slide-to="1"></li>
+                                <li data-target="#image_carousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-xs-2">
+                                            <img src="img/sony.png" class="img-responsive">
+                                        </div>
+
+                                        <div class="col-xs-2">
+                                            <img src="img/adidas.png" class="img-responsive">
+                                        </div>
+
+                                        <div class="col-xs-2">
+                                            <img src="img/emirates.png" class="img-responsive">
+                                        </div>
+
+                                        <div class="col-xs-2">
+                                            <img src="img/coca-cola.png" class="img-responsive">
+                                        </div>
+
+                                        <div class="col-xs-2">
+                                            <img src="img/visa.png" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-xs-2">
+                                            <img src="img/adidas.png" class="img-responsive">
+                                        </div>
+
+                                        <div class="col-xs-2">
+                                            <img src="img/coca-cola.png" class="img-responsive">
+                                        </div>
+                                        
+                                        <div class="col-xs-2">
+                                            <img src="img/emirates.png" class="img-responsive">
+                                        </div>
+
+                                        <div class="col-xs-2">
+                                            <img src="img/visa.png" class="img-responsive">
+                                        </div>
+
+                                        <div class="col-xs-2">
+                                            <img src="img/sony.png" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-xs-2">
+                                            <img src="img/visa.png" class="img-responsive">
+                                        </div>
+                                        
+                                        <div class="col-xs-2">
+                                            <img src="img/emirates.png" class="img-responsive">
+                                        </div>
+
+                                        <div class="col-xs-2">
+                                            <img src="img/sony.png" class="img-responsive">
+                                        </div>
+
+                                        <div class="col-xs-2">
+                                            <img src="img/coca-cola.png" class="img-responsive">
+                                        </div>
+
+                                        <div class="col-xs-2">
+                                            <img src="img/adidas.png" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="imgslider__arrow--right right carousel-control" data-slide="next" href="#image_carousel"><i class="fas fa-angle-right"></i></a>
         </div>
     </section>
 
@@ -392,6 +476,13 @@
             </div>
         </div>
     </div>
+
+
+<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="main.js"></script>
 </body>

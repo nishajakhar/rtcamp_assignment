@@ -4,9 +4,8 @@
     margin: auto;
 
     .fas {
-        font-size: 5rem;
+        font-size: 50px;
         color: $color_grey;
-        margin-top: 20px;
     }
 
     &__arrow--left {
@@ -22,7 +21,7 @@
         }   
     }
 
-    div {
+    .container {
         flex-grow: 1;
         margin-top: auto;
         margin-bottom: auto;
