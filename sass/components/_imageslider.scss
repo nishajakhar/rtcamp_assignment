@@ -1,7 +1,6 @@
 .imgslider {
-    display: flex;
-    width: 80%;
-    margin: auto;
+    position: relative;
+    width: 100%;
 
     .fas {
         font-size: 50px;
@@ -9,7 +8,6 @@
     }
 
     &__arrow--left {
-        flex-grow: 1;
         margin: 10px;
         display: inline-block;
         width: 15px;
@@ -22,14 +20,12 @@
     }
 
     .container {
-        flex-grow: 1;
         margin-top: auto;
         margin-bottom: auto;
         display: inline-block;
     }
 
     &__arrow--right {
-        flex-grow: 1;
         margin: 5px;
         display: inline-block;
         width: 15px;
@@ -41,9 +37,3 @@
         }
     }
 }
-
-    @media only screen and (max-width : 900px){
-        .imgslider{
-            flex-wrap: wrap;
-        }
-    }

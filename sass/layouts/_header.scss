@@ -22,7 +22,7 @@
 
         &--part {
             position: absolute;
-            top: 70%;
+            top: 72%;
             left: 22%;
             font-size: 11px;
             text-transform: uppercase;
@@ -65,7 +65,7 @@
 
         &--input {
             width: 250px;
-            height: 25px;
+            height: 23px;
             background-image: url("/img/placeholder-pic.png");
             background-repeat: no-repeat;
             border: 2px solid gray;
@@ -86,7 +86,7 @@
     .header {
 
         &__logo {
-            padding: 1.5rem;
+            padding: 25px;
             margin-top: 15px;
             text-align: center;
             position: relative;
@@ -97,8 +97,8 @@
             }
 
             &--part {
-                top: 72%;
-                left: 70%;
+                top: 75%;
+                left: 75%;
             }
         }
 
@@ -123,6 +123,14 @@
             top: 5px;
             left: 5px;
             margin-top: 0;
+            
+            &--input{
+                display: none;
+            }
+            
+            .search-btn{
+                display: block;
+            }
         }
     }
 }

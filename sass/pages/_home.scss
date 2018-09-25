@@ -78,7 +78,37 @@
     }
 }
 
+.user-stories{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    
+    .fas{
+        margin-top:20px;
+    }
+    a{
+        height: 100px;
+    }
 
+     .row{
+        width: 90%;
+        margin: auto !important;
+         padding: 0px !important;
+    }
+    
+    .row [class^='col-'] {
+    padding: 0px !important;
+    }
+    .carousel-inner{
+       
+        
+        img{
+            border: 5px solid gray;
+            width: 300px !important;
+            height: 100px !important;
+        }
+    }
+}
 .main {
     display: flex;
 
@@ -332,10 +362,7 @@
     position: relative;
     
     a{
-        top: 35px;
-        //background-image: linear-gradient(to right, white, white) !important; 
-        //display: inline-block;
-        //width: 50px; 
+        margin-top: -5px;
     }
     .fas{
         margin-top:7px;
@@ -349,6 +376,10 @@
         width: 95%;
         height: 100%;
         margin: auto !important;
+        
+        img{
+            width: 100px !important;
+        }
     }
     .imgslider {
         width: 100%;
@@ -396,34 +427,7 @@
         }
     }
 
-    .user-stories {
-
-        .imgslider {
-
-            &__arrow--left {
-                display: none;
-            }
-
-            &__arrow--right {
-                display: none;
-            }
-
-            &__images {
-                position: relative;
-
-                &--img {
-                    border: 5px solid gray;
-                    height: 90px;
-                    width: 120px;
-                    display: block;
-                    margin: 5px auto;
-
-                }
-            }
-        }
-    }
-
-
+    
 
     .main {
         display: block;
@@ -466,33 +470,11 @@
 
         }
     }
-
-    .partners {
+    .partners{
         width: 95%;
-        margin: auto;
-
-        .imgslider {
-
-            &__arrow--left {
-                display: none;
-            }
-
-            &__arrow--right {
-                display: none;
-            }
-
-            &__images {
-                position: relative;
-
-                &--img {
-                    border: 5px solid gray;
-                    height: 90px;
-                    width: 120px;
-                    display: block;
-                    margin: 5px auto;
-
-                }
-            }
-        }
+    }
+    
+    .user-stories{
+        width: 95%;
     }
 }
